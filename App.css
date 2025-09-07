@@ -1,0 +1,107 @@
+/* App.css */
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #eef2ff 0%, #f9fafb 100%);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Center the app content */
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main container styling */
+div.p-6 {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+div.p-6:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Input and Button Container */
+.flex {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Input Styling */
+input {
+    border: 1px solid #cbd5e1;
+    padding: 0.75rem;
+    flex-grow: 1;
+    border-radius: 0.5rem 0 0 0.5rem;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+/* Button Styling */
+button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    cursor: pointer;
+    border-radius: 0 0.5rem 0.5rem 0;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #2563eb;
+    transform: translateY(-1px);
+}
+
+/* Task List Message Styling */
+p.text-gray-500 {
+    color: #6b7280;
+    font-style: italic;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: #1e3a8a;
+    margin-bottom: 1.5rem;
+}
+
+/* Additional: Add a nice subtle animation for tasks (optional) */
+.task-item {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: #f1f5f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.2s ease;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    color: #9ca3af;
+    background-color: #e0e7ff;
+}
